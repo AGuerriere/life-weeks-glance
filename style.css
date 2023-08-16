@@ -1,16 +1,37 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .week {
-  height:5px;
-  width: 5px;
-  border: 1px solid black;
+  height: 7px;
+  width: 7px;
+  background-color: grey;
 }
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(52, 1fr);
+  grid-template-columns: repeat(52, 9px);
   column-gap: 1px;
   row-gap: 1px;
 }
 
 .highlight {
   background-color: red;
+}
+
+@media only screen and (max-width: 440px) {
+  .week {
+    height:4px;
+    width: 4px;
+  }
+  
+  .gridContainer {
+    grid-template-columns: repeat(52, 7px);
+    column-gap: 0px;
+    row-gap: 1px;
+  }
 }
