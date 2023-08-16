@@ -4,8 +4,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgba(251, 244, 244, 0.958);
+  font-family: 'Roboto Mono', monospace;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .week {
   height: 7px;
   width: 7px;
@@ -21,6 +29,27 @@ body {
 
 .highlight {
   background-color: red;
+}
+
+input {
+  margin: 20px;
+}
+
+p{
+  margin:0;
+}
+.gridWrap p{
+
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.gridWrap {
+  display: flex;
+}
+
+.keepMeLeft {
+  width: 100%;
 }
 
 @media only screen and (max-width: 440px) {
