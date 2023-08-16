@@ -31,17 +31,24 @@ body {
   background-color: red;
 }
 
-input {
-  margin: 20px;
+input{
+  margin-bottom: 20px;
+}
+
+.gridWrap::before {
+  position: absolute;
+  content: 'Weeks \2192';
+  top:177px;
+  margin-left: 20px;
 }
 
 p{
   margin:0;
 }
 .gridWrap p{
-
   writing-mode: vertical-lr;
   text-orientation: upright;
+  letter-spacing: -5px;
 }
 
 .gridWrap {
@@ -51,6 +58,8 @@ p{
 .keepMeLeft {
   width: 100%;
 }
+
+
 
 @media only screen and (max-width: 440px) {
   .week {
