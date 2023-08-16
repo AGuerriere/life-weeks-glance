@@ -1,0 +1,16 @@
+.week {
+  height:5px;
+  width: 5px;
+  border: 1px solid black;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(52, 1fr);
+  column-gap: 1px;
+  row-gap: 1px;
+}
+
+.highlight {
+  background-color: red;
+}
