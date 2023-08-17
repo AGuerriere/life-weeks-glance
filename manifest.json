@@ -1,16 +1,24 @@
 {
-  "short_name": "Life Weeks Glance",
-  "name": "Life Weeks at a Glance",
-  "start_url": "/",
+  "background_color": "#000000",
+  "description": "A quick glance at your life in weeks",
+  "dir": "ltr",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
-  "description": "Your life at a Glance",
+  "name": "Life Weeks Glance",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "life-weeks-glance",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "categories": [],
+  "screenshots": [],
   "icons": [
     {
       "src": "favicon.png",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
+      "type": "image/png",
+      "sizes": "96x96"
     }
-  ]
+  ],
+  "shortcuts": [],
+  "id": "life-weeks-glance",
+  "lang": "en"
 }
