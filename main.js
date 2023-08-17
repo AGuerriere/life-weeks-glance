@@ -29,6 +29,7 @@ birthdayInput.addEventListener("change", () => {
   for (let index = 0; index < calculateWeeks(); index++) {
     weeks[index].classList.add("highlight")
   }
+  localStorage.setItem("savedBirthday", new Date(birthdayInput.value));
 })
 
 // Add weeks ::before elements
@@ -76,3 +77,15 @@ intervalData.forEach(data => {
   `;
   document.head.appendChild(style);
 });
+
+if(localStorage.getItem("savedBirthday")){
+  // clean previous highlights
+  for (let index = 0; index < 4264; index++) {
+    weeks[index].classList.remove("highlight")
+    
+  }
+  // set new hightlights
+  for (let index = 0; index < calculateWeeks(); index++) {
+    weeks[index].classList.add("highlight")
+  }
+}
