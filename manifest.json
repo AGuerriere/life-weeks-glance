@@ -1,0 +1,16 @@
+{
+  "short_name": "Life Weeks Glance",
+  "name": "Life Weeks at a Glance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "Your life at a Glance",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ]
+}
